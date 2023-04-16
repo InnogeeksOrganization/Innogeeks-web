@@ -1,0 +1,35 @@
+body {
+    background-image: url(https://th.bing.com/th/id/R.1591954549cb4f45870949c4de53cdaf?rik=RcEP3rK4%2bsT4TA&riu=http%3a%2f%2fumaar.github.io%2fexperiments%2fgithub-3d-logo%2frender-2.jpg&ehk=VpOrW33N7blW8q7XMTSvR8krYhTyJ7ruH%2f%2fmUKlWXYM%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  h1 {
+      font-family: 'DynaPuff', cursive;
+      text-align: center;
+      text-align: center;
+      font-size: 120px;
+      color: white;
+    }
+    h1:hover{
+      color: #FF8400;
+    }
+    .btn:hover{ background: #FF8400;
+    background-image: -webkit-linear-gradient(top, #FF8400, #F9D949);
+    background-image: -moz-linear-gradient(top, #FF8400, #F9D949);
+    background-image: -ms-linear-gradient(top, #FF8400, #F9D949);
+    background-image: -o-linear-gradient(top, #FF8400, #F9D949);
+    background-image: linear-gradient(to bottom, #FF8400, #F9D949);
+
+    color: #a30714;
+  }
+
+      #result {
+          height: 10px;
+          position:absolute;   
+          left: 35%;
+
+        }
+        .image{
+          height: 50px;
+        }
