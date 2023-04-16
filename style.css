@@ -1,0 +1,139 @@
+*{
+    background-color: black;
+    color: white;
+}
+h1{
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 15px 15px 15px white;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+.usernames{
+    margin-left: 530px;
+    margin-top: 80px; 
+}
+#username{
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    border: 4px solid grey;
+    border-style: double;
+    border-radius: 80px;
+}
+
+#username:hover{
+  color: goldenrod;
+  background-color: white;
+}
+#button{
+    height: 45px;
+    width: 88px;
+    font-size: 18px;
+    /* background-color: goldenrod   */
+    /* width: 220px; */
+    /* height: 50px; */
+    border: none;
+    outline: none;
+    color: #fff;
+    background: goldenrod;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+#button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+#button:active {
+  color: #000
+}
+
+#button:active:after {
+  background: transparent;
+}
+
+#button:hover:before {
+  opacity: 1;
+}
+
+#button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.image{
+    height: 200px;
+    width: 350px;
+    margin-top: -170px;
+}
+
+#profile img {
+  /* border: 2px solid red; */
+  width: 250px;
+  border-radius: 50% 10%;
+	/* background-image: linear-gradient(to bottom left, #f83600, #f9d423); */
+  /* box-shadow: 1 1 5px 5px rgba(1, 1, 1, 1.5); */
+}
+
+.info ul{
+  position: absolute;
+  margin-top: -20px;
+  margin-left: 470px;
+  color: goldenrod;
+  display: flex;
+}
+ul li{font-weight: 650;
+  color: goldenrod;
+  letter-spacing: 2px;
+  margin: 15px;
+  padding: 5px 15px;
+  /* background: goldenrod; */
+  list-style: none;
+}
+li:hover{
+  color: white;
+}
+
+#output{
+  display: none;
+}
+
+.bio p{
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 950px;
+  width: 500px;
+  color: white;
+  margin-top: -300px;
+  position: absolute;
+}
