@@ -1,0 +1,37 @@
+
+body {
+    background-image: url('bg.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  h1 {
+      font-family: 'DynaPuff', cursive;
+      text-align: center;
+      text-align: center;
+      font-size: 120px;
+      color: white;
+    }
+    h1:hover{
+      color: #FF8400;
+    }
+    .btn:hover{ background: #FF8400;
+    background-image: -webkit-linear-gradient(top, #FF8400, #F9D949);
+    background-image: -moz-linear-gradient(top, #FF8400, #F9D949);
+    background-image: -ms-linear-gradient(top, #FF8400, #F9D949);
+    background-image: -o-linear-gradient(top, #FF8400, #F9D949);
+    background-image: linear-gradient(to bottom, #FF8400, #F9D949);
+   
+    color: #a30714;
+  }
+    
+      #result {
+          height: 10px;
+          position:absolute;   
+          left: 35%;
+        
+        }
+        .image{
+          height: 50px;
+        }
+        
