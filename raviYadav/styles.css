@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background: rgb(15, 20, 35);
+    margin: 0;
+    padding: 0;
+}
+body::after{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7272ed;
+    background: linear-gradient(to top left, #f0f, #f08);
+    clip-path: circle(35vw at 100% 1%);
+    z-index:-1;
+}
+body::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #7272ed;
+    background: linear-gradient(to top left, #f08, #f0f);
+    clip-path: circle(65vh at 0% 100%);
+    z-index: -1;
+}
+.container {
+    display: flex;
+    color: aliceblue;
+    background-color: rgba(255, 235, 205, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.content{
+    position: absolute;
+    background-color: #ffffff13;
+    backdrop-filter: blur(10px);
+    
+    box-shadow: 2px 2px 22px 2px #ffffff2a;
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(14, 14, 18, 0.686),#1f0c95, rgba(37, 27, 42, 0.44)) 1;
+    
+}
+h1{
+    margin: 10px;
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    font-style: italic;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff00;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 10px;
+}
+input{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    font-size:1rem;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #876262;
+    font-weight: 500;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.btn{ 
+    font-size: 16px; 
+    color: #ffffff; 
+    background: linear-gradient(90deg, #182633 0%, #2c47aa 100%); 
+    padding: 10px 47px; 
+    border: none; 
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0px;
+    border-radius: 22px 22px;
+    transition : 327ms;
+    transform: translateY(0);
+    }
+    
+.btn:hover{ 
+    transition : 1ms;
+    transform : translateY(-2px);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.btn:active{ 
+    transition : 1ms;
+    transform : translateY(0px);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.resultBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #b961610c;
+    border: #0b051d19 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 10px;
+    box-shadow: 2px 2px 50px 2px #15050579;
+}
+
+.usrImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+.githubHead{
+    display: flex;;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 650px;
+    margin: 10px;
+}
+.githubInfo{
+    height: 100%;
+    width: 400px;
+    position: relative;
+}
+.githubUser{
+    font-size: 26px;
+    font-weight: bold;
+    color: #e1ebf5;
+    margin: 10px;
+}
+.githubFact{
+    position: relative;
+    width: 480px;
+    height: 100%;
+}
+.joinedDate {
+    position: absolute;
+    top:-5rem;
+    right: -10px;
+    opacity: .7;
+    font-weight: 500;
+}
+.githubBio {
+    opacity: .7;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.githubUserName a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #e1ebf5;
+    margin: 10px;
+    font-style: italic;
+    text-decoration: none;
+    opacity: .7;
+}
+.githubRepo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:20px;
+    background-color: #2326282b;
+    border-radius: 50%;
+    border-radius: 20px;
+    width: 100%;
+    height: 85px;
+    padding: 10px;
+
+}
+.followers , .following, .repos{
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+.reposHeading, .followersHeading, .followingHeading {
+    font-size: 13px;
+    font-weight: 600;
+}
+.reposTotal, .followersTotal, .followingTotal {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: .7;
+}
+.githubSocial{
+    display: grid;
+    grid-template-columns: 240px 240px;
+    row-gap: 1.2em;
+    color:rgba(255, 255, 255, 0.857);
+}
+
+.location, .twitter ,.website, .company {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.location  img , .twitter img ,.website img , .company img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
